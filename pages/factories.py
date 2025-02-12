@@ -1,7 +1,7 @@
 import factory
-from .models import Page
+from pages.models import Product
 
-class PageFactory(factory.django.DjangoModelFactory):
+class ProductFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Product
     name = factory.Faker('company')
